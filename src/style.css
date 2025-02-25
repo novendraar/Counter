@@ -13,6 +13,7 @@ body {
   align-items: center;
   text-align: center;
   color: #fff;
+  font-family: Arial, sans-serif;
 }
 
 .container .number {
@@ -33,4 +34,28 @@ body {
   background: #141517;
   color: #fff;
   cursor: pointer;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.increment:hover {
+  background: #1f2023;
+}
+
+@media (max-width: 768px) {
+  .container .number {
+    font-size: 4rem;
+  }
+
+  .btns-container {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .increment {
+    width: 80%;
+    font-size: 1.5rem;
+  }
 }
